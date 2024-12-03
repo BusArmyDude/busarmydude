@@ -68,8 +68,8 @@ h1 {
 }
 
 .icon img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
@@ -122,8 +122,8 @@ h1 {
     }
 
     .icon img {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 
     .link {
