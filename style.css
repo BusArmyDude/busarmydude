@@ -33,16 +33,16 @@ body {
 }
 
 .profile-img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #007bff; /* Border around the profile picture */
 }
 
-h1 {
+.username h1 {
     margin-top: 10px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +51,8 @@ h1 {
 }
 
 .verified {
-    width: 18px;
-    margin-left: 8px;
+    width: 20px;
+    margin-left: 10px;
 }
 
 .social-icons {
@@ -64,8 +64,8 @@ h1 {
 }
 
 .icon img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
@@ -78,6 +78,10 @@ h1 {
 .links {
     margin-top: 20px;
     width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f8f9fa;
 }
 
 .link-container {
@@ -111,13 +115,18 @@ h1 {
         padding: 15px;
     }
 
-    h1 {
-        font-size: 1.2rem;
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .username h1 {
+        font-size: 1.3rem;
     }
 
     .icon img {
-        width: 24px;
-        height: 24px;
+        width: 25px;
+        height: 25px;
     }
 
     .link {
