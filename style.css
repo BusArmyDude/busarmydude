@@ -17,7 +17,8 @@ body {
 }
 
 .verified {
-    width: 24px;  /* Adjust size of the badge */
+    width: 16px;  /* Smaller size for favicon-like appearance */
+    height: 16px;  /* Ensure it remains proportional */
     vertical-align: middle;
     margin-left: 5px;
 }
