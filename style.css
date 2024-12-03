@@ -18,7 +18,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
-    box-sizing: border-box;
+    box-sizing: border-box;  /* Ensures padding doesn't overflow the container */
 }
 
 /* Profile Section Styling */
@@ -45,7 +45,7 @@ h1 {
 
 /* Verified Badge */
 .verified {
-    width: 18px;
+    width: 20px;
     margin-left: 8px;
 }
 
@@ -55,6 +55,9 @@ h1 {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    flex-wrap: wrap;  /* Ensures the icons wrap to the next line if needed */
+    padding: 0;
+    box-sizing: border-box;  /* Keeps the icons within the container */
 }
 
 .social-icons img {
