@@ -1,13 +1,11 @@
-/* Resetting default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body & Layout */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f7fc;
     display: flex;
     justify-content: center;
@@ -16,11 +14,10 @@ body {
     margin: 0;
 }
 
-/* Container for everything */
 .container {
-    background-color: #ffffff;
+    background-color: white;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -31,7 +28,6 @@ body {
     align-items: center;
 }
 
-/* Profile Section */
 .profile {
     margin-bottom: 20px;
 }
@@ -54,15 +50,14 @@ h1 {
 }
 
 .verified {
-    width: 18px;
+    width: 20px;
     margin-left: 8px;
 }
 
-/* Social Media Icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 15px;
     flex-wrap: wrap;
 }
@@ -79,7 +74,6 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Links Section */
 .links {
     margin-top: 30px;
     width: 100%;
@@ -111,7 +105,6 @@ h1 {
     background-color: #003f7f;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 600px) {
     .container {
         padding: 15px;
