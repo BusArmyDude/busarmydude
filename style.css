@@ -54,17 +54,17 @@ h1 {
 }
 
 .verified {
-    width: 20px;
+    width: 18px;
     margin-left: 8px;
 }
 
 /* Social Media Icons */
 .social-icons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .icon img {
@@ -79,10 +79,14 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Links */
+/* Links Section */
 .links {
     margin-top: 30px;
     width: 100%;
+}
+
+.link-container {
+    margin-bottom: 15px;
 }
 
 .link {
@@ -93,7 +97,6 @@ h1 {
     padding: 12px;
     border-radius: 5px;
     font-size: 1rem;
-    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
