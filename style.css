@@ -17,11 +17,12 @@ body {
 }
 
 .verified {
-    width: 16px;  /* Smaller size for favicon-like appearance */
-    height: 16px;  /* Ensure it remains proportional */
+    width: 16px;  /* Favicon-like size */
+    height: 16px;  /* Proportional height */
     vertical-align: middle;
-    margin-left: 5px;
+    margin-left: 2px;  /* Closer to the name */
 }
+
 
 .links {
     margin-top: 20px;
