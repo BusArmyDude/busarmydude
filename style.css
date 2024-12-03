@@ -17,8 +17,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 400px;
-    box-sizing: border-box;  /* Ensures padding doesn't overflow the container */
+    max-width: 450px;
+    box-sizing: border-box;
 }
 
 /* Profile Section Styling */
@@ -55,14 +55,15 @@ h1 {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
-    flex-wrap: wrap;  /* Ensures the icons wrap to the next line if needed */
+    flex-wrap: wrap;
     padding: 0;
-    box-sizing: border-box;  /* Keeps the icons within the container */
+    box-sizing: border-box;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
 
 /* Links Section Styling */
@@ -100,8 +101,8 @@ h1 {
     }
 
     .social-icons img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     h1 {
