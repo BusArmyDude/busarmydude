@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f7fc;
     display: flex;
     justify-content: center;
@@ -17,10 +17,10 @@ body {
 .container {
     background-color: white;
     width: 100%;
-    max-width: 600px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 480px; /* Slightly smaller width */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -29,19 +29,20 @@ body {
 }
 
 .profile {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .profile-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #007bff; /* Border around the profile picture */
 }
 
 h1 {
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,21 +51,21 @@ h1 {
 }
 
 .verified {
-    width: 20px;
+    width: 18px;
     margin-left: 8px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin-top: 15px;
     flex-wrap: wrap;
 }
 
 .icon img {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
@@ -75,12 +76,12 @@ h1 {
 }
 
 .links {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
 }
 
 .link-container {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .link {
@@ -88,7 +89,7 @@ h1 {
     background-color: #007bff;
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
     text-align: center;
@@ -111,12 +112,12 @@ h1 {
     }
 
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .icon img {
-        width: 25px;
-        height: 25px;
+        width: 24px;
+        height: 24px;
     }
 
     .link {
