@@ -1,3 +1,4 @@
+/* Basic styling for body and layout */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -10,20 +11,41 @@ body {
     width: 80%;
 }
 
+/* Profile section */
 .profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
 
-.verified {
-    width: 16px;  /* Favicon-like size */
-    height: 16px;  /* Proportional height */
-    vertical-align: middle;
-    margin-left: 2px;  /* Closer to the name */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
 }
 
+/* Verified badge styling */
+.verified {
+    width: 16px;  /* Small, favicon-like size */
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 2px;  /* Move closer to the name */
+}
 
+/* Social Media Links Styling */
+.social-media {
+    margin-top: 10px;
+    display: flex;  /* Make items line up horizontally */
+    justify-content: center;  /* Center the icons horizontally */
+}
+
+.social-icon {
+    width: 20px;  /* Smaller icon size */
+    height: 20px;  /* Keep proportional */
+    margin: 0 10px;  /* Space between icons */
+    vertical-align: middle;
+}
+
+/* Links Section Styling */
 .links {
     margin-top: 20px;
 }
