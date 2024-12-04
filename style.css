@@ -1,78 +1,78 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f7f7f7;
-}
-
-.container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  font-family: 'Arial', sans-serif;
   text-align: center;
+  background-color: #f5f5f5;
 }
 
-.profile-section {
-  margin-bottom: 20px;
-}
-
-.profile-picture {
-  width: 100px;
-  height: 100px;
+/* Profile Picture */
+.profile {
+  display: inline-block;
+  margin-top: 20px;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Username and Verified Badge */
 .username {
-  font-size: 24px;
+  font-size: 1.5em;
+  font-weight: bold;
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .verified-badge {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
+/* Social Media Links */
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
-.social-links img {
-  width: 30px;
-  height: 30px;
-}
-
-.link-section {
+.social-link {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+.social-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.link-button {
-  text-decoration: none;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.social-link:hover {
+  transform: scale(1.1);
 }
 
-.link-button:hover {
-  background-color: #0056b3;
+/* Example for larger social media logos */
+.social-link.large {
+  width: 80px;
+  height: 80px;
+}
+
+/* Optional styling for borders */
+.social-link {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+.social-link:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
