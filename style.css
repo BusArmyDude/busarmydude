@@ -222,7 +222,7 @@ body {
     padding: 15px;
     margin-bottom: 20px;
     background-color: var(--card-background-color);
-    color: #333;
+    color: var(--text-color);
 }
 
 .event-date {
