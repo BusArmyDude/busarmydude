@@ -11,7 +11,8 @@ body {
 
 /* Profile Section */
 .profile {
-    margin: 20px auto;
+    margin: 40px auto;
+    text-align: center;
 }
 
 .profile-pic {
@@ -37,11 +38,14 @@ body {
     margin-left: 5px;
 }
 
-/* Profile Description Section */
-.profile-description p {
-    font-size: 1.1em;
+/* Profile Description */
+.profile-description {
+    font-size: 1.2em;
     margin-top: 10px;
     color: var(--text-color);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Social Media Icons Section */
@@ -50,7 +54,6 @@ body {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -83,12 +86,16 @@ body {
 .cta-button {
     background-color: var(--primary-color);
     color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 12px 20px;
+    font-size: 1.1em;
     text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
@@ -97,118 +104,135 @@ body {
 }
 
 /* Email Section */
-.email-section {
-    text-align: center;
-    margin-top: 40px;
-}
-
 .email-link {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #ff5733;
+    background-color: var(--primary-color);
     color: white;
-    font-size: 1.2em;
+    padding: 12px 20px;
+    font-size: 1.1em;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .email-link:hover {
-    background-color: #c04e29;
+    background-color: var(--hover-color);
     transform: scale(1.05);
 }
 
 /* Testimonials Section */
 .testimonials-section {
-    margin-top: 50px;
-}
-
-.testimonials-section h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
+    margin-top: 40px;
 }
 
 .testimonial {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px auto;
-    max-width: 600px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
     border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section h2 {
+    margin-top: 0;
 }
 
 /* FAQ Section */
 .faq-section {
-    margin-top: 50px;
-}
-
-.faq-section h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
+    margin-top: 40px;
 }
 
 .faq-item {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px auto;
-    max-width: 600px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
     border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    margin-top: 0;
+}
+
+.faq-item h3 {
+    margin-top: 0;
 }
 
 /* Affiliate Links Section */
 .affiliate-links {
-    margin-top: 50px;
-}
-
-.affiliate-links h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
+    margin-top: 40px;
 }
 
 .affiliate-link {
-    display: block;
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 15px;
-    font-size: 1.2em;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
     text-decoration: none;
-    margin: 10px auto;
-    border-radius: 8px;
-    max-width: 600px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .affiliate-link:hover {
-    background-color: #ddd;
+    background-color: var(--hover-color);
     transform: scale(1.05);
 }
 
 /* Upcoming Events Section */
 .upcoming-events {
-    margin-top: 50px;
-}
-
-.upcoming-events h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
+    margin-top: 40px;
 }
 
 .upcoming-events ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px auto;
-    max-width: 600px;
 }
 
 .upcoming-events li {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
 }
 
 /* Dark Mode Colors */
@@ -224,4 +248,20 @@ body.dark-mode {
     --text-color: #eaeaea;
     --primary-color: #007bff;
     --hover-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cta-button, .email-link, .affiliate-link {
+        width: 90%;
+    }
+
+    .testimonial, .faq-item, .upcoming-events li {
+        width: 90%;
+    }
 }
