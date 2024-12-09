@@ -190,6 +190,106 @@ body {
     margin-bottom: 10px;
 }
 
+/* Affiliate Links Section */
+.affiliate-links {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.affiliate-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.affiliate-link:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Styling for Upcoming Events Section */
+.upcoming-events {
+    margin: 20px;
+    padding: 10px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.event-date {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.event-date .month {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .day {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event-date .year {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details p {
+    margin: 0;
+}
+
+.event-details .event-time {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    margin-top: 40px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
 /* Dark Mode Colors */
 :root {
     --background-color: #f0f0f0;
@@ -215,23 +315,6 @@ body.dark-mode {
     --faq-question-color: #ffffff;
 }
 
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    margin-top: 40px;
-    padding: 12px 25px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dark-mode-toggle:hover {
-    background-color: var(--hover-color);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .social-icons {
@@ -239,11 +322,11 @@ body.dark-mode {
         justify-content: space-evenly;
     }
 
-    .cta-button, .email-link {
+    .cta-button, .email-link, .affiliate-link {
         width: 90%;
     }
 
-    .testimonial, .faq-item {
+    .testimonial, .faq-item, .upcoming-events li {
         width: 90%;
     }
 }
