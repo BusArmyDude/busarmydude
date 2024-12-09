@@ -75,15 +75,15 @@ body {
 }
 
 .social-icons a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px; /* Adjusted to make sure they fit properly */
-    height: 48px; /* Adjusted to make sure they fit properly */
-    border-radius: 50%;
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    border-radius: 50%; /* Circle shape */
+    background-color: #f4f4f9; /* Circle background */
     overflow: hidden;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: #f4f4f9; /* Ensures there's a background to prevent icons from looking off */
 }
 
 .social-icons a:hover {
@@ -92,9 +92,9 @@ body {
 }
 
 .social-icons img {
-    width: 28px; /* Adjusted for proper icon size */
-    height: 28px; /* Adjusted for proper icon size */
-    object-fit: cover;
+    width: 28px; /* Icon size */
+    height: 28px; /* Icon size */
+    object-fit: contain;
 }
 
 /* Links Section */
