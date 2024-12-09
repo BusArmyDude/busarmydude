@@ -190,64 +190,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Affiliate Links Section */
-.affiliate-links {
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.affiliate-link {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 6px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.affiliate-link:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.05);
-}
-
-/* New Flexbox Layout for Evenly Spaced Buttons and Sections */
-.section-button-container {
-    display: flex;
-    justify-content: space-between; /* Space out the sections evenly */
-    margin: 20px 0; /* Add margin around the sections */
-    padding: 0 20px;
-}
-
-.section-button-container .cta-button,
-.section-button-container .email-link,
-.section-button-container .affiliate-link {
-    width: 48%; /* Make the buttons take up almost equal space on both sides */
-    margin: 0;
-}
-
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    margin-top: 40px;
-}
-
-button {
-    padding: 12px 25px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--hover-color);
-}
-
 /* Dark Mode Colors */
 :root {
     --background-color: #f0f0f0;
@@ -259,7 +201,6 @@ button:hover {
     --testimonial-background-color: #f9f9f9;
     --testimonial-text-color: #333;
     --faq-question-color: #333;
-    --events-border-color: #ccc; /* Border color for events section */
 }
 
 body.dark-mode {
@@ -272,34 +213,23 @@ body.dark-mode {
     --testimonial-background-color: #333;
     --testimonial-text-color: #ffffff;
     --faq-question-color: #ffffff;
-    --events-border-color: #444; /* Dark mode border color */
 }
 
-/* Events Section */
-.upcoming-events {
-    margin-top: 50px;
-    padding: 0 20px;
-    border: 1px solid var(--events-border-color); /* Border added here */
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--card-background-color);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.upcoming-events h2 {
-    color: var(--heading-color);
-    margin-bottom: 30px;
-}
-
-.event-item {
-    margin: 20px;
-    padding: 25px;
-    background-color: var(--card-background-color);
-    border-radius: 10px;
-    color: var(--text-color);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+.dark-mode-toggle:hover {
+    background-color: var(--hover-color);
 }
 
 /* Responsive Design */
@@ -309,28 +239,11 @@ body.dark-mode {
         justify-content: space-evenly;
     }
 
-    .cta-button, .email-link, .affiliate-link {
+    .cta-button, .email-link {
         width: 90%;
     }
 
     .testimonial, .faq-item {
         width: 90%;
-    }
-
-    .upcoming-events {
-        width: 90%; /* Make events section full-width on small screens */
-    }
-
-    /* Adjust container for smaller screens */
-    .section-button-container {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center;
-    }
-
-    .section-button-container .cta-button,
-    .section-button-container .email-link,
-    .section-button-container .affiliate-link {
-        width: 100%; /* Full width for small screens */
-        margin-bottom: 20px; /* Space between buttons */
     }
 }
