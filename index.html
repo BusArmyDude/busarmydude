@@ -3,49 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Army Dude | Link In Bio</title>
+    <title>Bus Army Dude - Link in Bio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="light-mode">
-    <!-- Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle">🌙</button>
-
+<body>
+    <!-- Profile Section -->
     <div class="profile">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="profile.jpg" alt="Your Profile Picture" class="profile-pic">
         <div class="name">
             <h1>Bus Army Dude</h1>
-            <img src="check.png" alt="Verified Badge" class="verified-badge">
+            <img src="check.png" alt="Verified" class="verified-badge">
         </div>
     </div>
 
-    <div class="social-links">
-        <h2>Follow Me</h2>
-        <div class="social-icons">
-            <a href="https://tiktok.com/@busarmydude" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
-            <a href="https://m.twitch.tv/BusArmyDude" target="_blank"><img src="twitch-icon.png" alt="Twitch"></a>
-            <a href="https://x.com/KritzarRiver" target="_blank"><img src="x-icon.png" alt="X"></a>
-            <a href="https://www.threads.net/@riverkritzar" target="_blank"><img src="threads-icon.png" alt="Threads"></a>
-            <a href="https://snapchat.com/t/ZVa6MObk" target="_blank"><img src="snapchat-icon.png" alt="Snapchat"></a>
-            <a href="https://patreon.com/busarmydude" target="_blank"><img src="patreon-logo.png" alt="Patreon"></a>
-            <a href="https://discord.gg/cetx32yAhw" target="_blank"><img src="Discord-Logo.png" alt="Discord"></a>
-            <a href="https://www.facebook.com/profile.php?id=61569972389004" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://music.apple.com/profile/riverkritzar53" target="_blank"><img src="apple-music-icon.png" alt="Apple Music"></a>
-            <a href="https://steamcommunity.com/profiles/76561199283946668/" target="_blank"><img src="steam-icon.png" alt="Steam"></a>
-            <a href="https://www.instagram.com/riverkritzar/" target="_blank"><img src="Instagram-icon.png" alt="Instagram"></a>
-            <!-- Add other icons here -->
-        </div>
+    <!-- Social Media Icons Section -->
+    <div class="social-icons">
+        <a href="https://tiktok.com/@busarmydude" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
+        <a href="https://m.twitch.tv/BusArmyDude" target="_blank"><img src="twitch-icon.png" alt="Twitch"></a>
+        <a href="https://x.com/KritzarRiver" target="_blank"><img src="x-icon.png" alt="X"></a>
+        <a href="https://www.threads.net/@riverkritzar" target="_blank"><img src="threads-icon.png" alt="Threads"></a>
+        <a href="https://snapchat.com/t/ZVa6MObk" target="_blank"><img src="snapchat-icon.png" alt="Snapchat"></a>
+        <a href="https://patreon.com/busarmydude" target="_blank"><img src="patreon-logo.png" alt="Patreon"></a>
+        <a href="https://discord.gg/cetx32yAhw" target="_blank"><img src="Discord-Logo.png" alt="Discord"></a>
+        <a href="https://www.facebook.com/profile.php?id=61569972389004" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://music.apple.com/profile/riverkritzar53" target="_blank"><img src="apple-music-icon.png" alt="Apple Music"></a>
+        <a href="https://steamcommunity.com/profiles/76561199283946668/" target="_blank"><img src="steam-icon.png" alt="Steam"></a>
+        <a href="https://www.instagram.com/riverkritzar/" target="_blank"><img src="Instagram-icon.png" alt="Instagram"></a>
     </div>
 
-    <div class="links">
-        <h2>My Links</h2>
-        <div class="link-container">
-            <a href="https://riverstechstore24.wordpress.com/" target="_blank">River's Tech Blog</a>
-            <a href="https://rivers-merch-store.printify.me/products" target="_blank">River's Merch Store Printify</a>
-            <a href="https://riverkritzar-shop.fourthwall.com/" target="_blank">River's Fourthwall Shop</a>
-            <!-- Add other links here -->
-        </div>
+    <!-- Links Section -->
+    <div class="links-section">
+        <a href="https://riverstechstore24.wordpress.com/" target="_blank">River's Tech Blog</a>
+        <a href="https://rivers-merch-store.printify.me/products" target="_blank">River's Merch Store Printify</a>
+        <a href="https://riverkritzar-shop.fourthwall.com/" target="_blank">River's Fourthwall Shop</a>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Dark Mode Toggle Button -->
+    <div class="dark-mode-toggle">
+        <button>Toggle Dark Mode</button>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.dark-mode-toggle button');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
