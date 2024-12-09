@@ -12,7 +12,7 @@
     <div class="profile">
         <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
         <div class="name">
-            <h1>Bus Army Dude<img src="check.png" alt="Verified" class="verified-badge"></h1>
+            <h1>Bus Army Dude <img src="check.png" alt="Verified" class="verified-badge"></h1>
         </div>
         <div class="profile-description">
             <p>Hi, I’m Bus Army Dude, a tech creator passionate about Apple products and gaming. If you love Apple tech and gaming, this is the place for you!</p>
@@ -36,7 +36,7 @@
 
     <!-- Call-to-Action Button Section -->
     <div class="cta-section">
-        <a href="https://riverstechstore24.wordpress.com/" class="cta-button">Check out my latest News Article!</a>
+        <a href="https://riverstechstore24.wordpress.com" class="cta-button">Check out my latest News Article!</a>
     </div>
 
     <!-- Email Section -->
@@ -60,12 +60,11 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-item">
             <h3>What gear do you use for streaming?</h3>
-            <p>I use a 2023 Mac Mini M2 for streaming and for the mic and web cam I use a iPhone 16 Pro</p>
+            <p>I use a MacBook Pro, Logitech webcam, and Elgato Stream Deck for streaming.</p>
         </div>
         <div class="faq-item">
             <h3>Where can I buy your merch?</h3>
             <p>You can find all of my merchandise at my online store <a href="https://rivers-merch-store.printify.me/products" target="_blank">here</a>.</p>
-            <p>You can find all of my fourthwall merchandise at my online store <a href="https://riverkritzar-shop.fourthwall.com/" target="_blank">here</a>.</p>
         </div>
     </div>
 
@@ -79,32 +78,15 @@
     <div class="upcoming-events">
         <h2>Upcoming Events</h2>
         <ul>
-            <p>No Upcoming Streams<p>
+            <p>No Upcoming Events</p>
         </ul>
     </div>
+
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
 
-    <script>
-        // Check if dark mode is saved in local storage
-        if (localStorage.getItem("dark-mode") === "enabled") {
-            document.body.classList.add("dark-mode");
-        }
-
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-
-            // Save dark mode preference to localStorage
-            if (body.classList.contains("dark-mode")) {
-                localStorage.setItem("dark-mode", "enabled");
-            } else {
-                localStorage.setItem("dark-mode", "disabled");
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
