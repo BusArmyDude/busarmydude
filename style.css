@@ -31,6 +31,18 @@ body.dark-mode {
     color: #fff;
 }
 
+/* Update headings color in light mode */
+body.light-mode h1,
+body.light-mode h2 {
+    color: #333;  /* Dark color for better contrast in light mode */
+}
+
+/* Update headings color in dark mode */
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #e0e0e0;  /* Lighter color for better contrast in dark mode */
+}
+
 /* Profile Section */
 .profile {
     text-align: center;
@@ -48,7 +60,6 @@ body.dark-mode {
 .name h1 {
     display: inline-block;
     font-size: 28px;
-    color: #333;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -76,7 +87,6 @@ body.dark-mode {
 .social-links h2 {
     font-size: 22px;
     font-weight: 600;
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -119,10 +129,10 @@ body.dark-mode {
 .links h2 {
     font-size: 22px;
     font-weight: 600;
-    color: #333;
     margin-bottom: 15px;
 }
 
+/* Link container styling */
 .link-container {
     display: flex;
     flex-direction: column;
