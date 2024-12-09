@@ -258,6 +258,7 @@ body {
 
 .event-details {
     flex: 1;
+    color: var(--event-text-color);
 }
 
 .event-details p {
@@ -267,7 +268,16 @@ body {
 .event-details .event-time {
     margin-top: 5px;
     font-size: 14px;
-    color: #666;
+    color: var(--event-time-color);
+}
+
+/* Dark Mode Colors for Events */
+body.dark-mode .event-details {
+    color: #f1f1f1; /* Lighter text for event name */
+}
+
+body.dark-mode .event-details .event-time {
+    color: #bbb; /* Lighter gray for event time */
 }
 
 /* Dark Mode Toggle */
