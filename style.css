@@ -264,26 +264,26 @@ body {
 .event-details p {
     margin: 0;
     font-size: 1.2em;
-    color: #000000; /* Set event name color to black */
+    color: #000000; /* Ensure event name is black */
 }
 
 .event-details .event-time {
     margin-top: 5px;
     font-size: 14px;
-    color: #000000; /* Set event time color to black */
+    color: #000000; /* Ensure event time is black */
 }
 
 /* Dark Mode Colors for Events */
 body.dark-mode .event-details {
-    color: #000000; /* Set event text color to black in dark mode */
+    color: #000000 !important; /* Force black text color in dark mode */
 }
 
 body.dark-mode .event-details p {
-    color: #000000; /* Set event name color to black in dark mode */
+    color: #000000 !important; /* Ensure event name is black in dark mode */
 }
 
 body.dark-mode .event-details .event-time {
-    color: #000000; /* Set event time color to black in dark mode */
+    color: #000000 !important; /* Ensure event time is black in dark mode */
 }
 
 /* Dark Mode Colors */
