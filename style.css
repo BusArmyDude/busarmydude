@@ -11,17 +11,17 @@ body {
 
 /* Light/Dark Mode */
 :root {
-    --bg-color: #fff;
-    --text-color: #333;
-    --link-color: #1a73e8;
-    --link-hover-color: #0056b3;
+    bg-color: #fff;
+    text-color: #333;
+    link-color: #1a73e8;
+    link-hover-color: #0056b3;
 }
 
 body.dark-mode {
-    --bg-color: #333;
-    --text-color: #fff;
-    --link-color: #4a90e2;
-    --link-hover-color: #8ab4f8;
+    bg-color: #333;
+    text-color: #fff;
+    link-color: #4a90e2;
+    link-hover-color: #8ab4f8;
 }
 
 /* Profile Section */
