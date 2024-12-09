@@ -1,46 +1,27 @@
-/* Global Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
-    background: #fff;
-    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
 }
 
-/* Light Mode */
-body.light-mode {
-    background-color: #fff;
-    color: #333;
+/* Light/Dark Mode */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --link-color: #1a73e8;
+    --link-hover-color: #0056b3;
 }
 
-/* Dark Mode */
 body.dark-mode {
-    background-color: #121212;
-    color: #fff;
-}
-
-/* Update headings color in light mode */
-body.light-mode h1,
-body.light-mode h2 {
-    color: #333;  /* Dark color for better contrast in light mode */
-}
-
-/* Update headings color in dark mode */
-body.dark-mode h1,
-body.dark-mode h2 {
-    color: #e0e0e0;  /* Lighter color for better contrast in dark mode */
+    --bg-color: #333;
+    --text-color: #fff;
+    --link-color: #4a90e2;
+    --link-hover-color: #8ab4f8;
 }
 
 /* Profile Section */
@@ -58,22 +39,22 @@ body.dark-mode h2 {
 }
 
 .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
+    align-items: center; /* Vertically center the username and badge */
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .name h1 {
-    margin-right: 10px; /* Add space between the name and the verified badge */
+    margin: 0; /* Remove any extra margin from the username */
 }
 
 .verified-badge {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle; /* Ensures the checkmark is centered vertically with the name */
+    width: 18px; /* Adjust the size if needed */
+    height: 18px;
+    margin-left: 5px; /* Add some spacing between the name and badge */
+    vertical-align: middle; /* Align with the center of the text */
     transition: transform 0.3s ease;
 }
 
@@ -81,130 +62,102 @@ body.dark-mode h2 {
     transform: scale(1.1);
 }
 
-/* Social Links Section */
-.social-links {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.social-links h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
+/* Social Media Icons */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .social-icons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px; /* Circle size */
-    height: 50px; /* Circle size */
-    border-radius: 50%; /* Circle shape */
-    background-color: #f4f4f9; /* Circle background */
-    overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
+    background-color: #1a73e8;
     transform: scale(1.1);
-    background-color: #eef1fd;
 }
 
-.social-icons img {
-    width: 28px; /* Icon size */
-    height: 28px; /* Icon size */
-    object-fit: contain;
+.social-icons i {
+    font-size: 20px;
+    color: #333;
+}
+
+.social-icons a:hover i {
+    color: #fff;
 }
 
 /* Links Section */
 .links {
-    width: 100%;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
     max-width: 500px;
+    margin: 20px auto;
+    background-color: var(--bg-color);
 }
 
 .links h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Link container styling */
-.link-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.link-container a {
-    display: block;
-    padding: 12px;
-    background-color: #fff;
-    color: #0077ff;
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 2px solid #0077ff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--link-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.link-container a:hover {
-    background-color: #eef1fd;
-    color: #0056b3;
+.links ul li a:hover {
+    color: var(--link-hover-color);
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
+/* Light/Dark Mode Toggle Button */
+.mode-toggle {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: none;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: #fff;
     border: none;
-    font-size: 24px;
-    color: #333;
+    border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.theme-toggle:hover {
-    color: #0077ff;
+.mode-toggle:hover {
+    background-color: var(--link-hover-color);
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
+.mode-toggle:focus {
+    outline: none;
+}
 
-    .verified-badge {
-        width: 18px;
-        height: 18px;
-    }
-
-    .social-icons {
-        gap: 10px;
-    }
-
-    .social-icons a {
-        width: 40px;
-        height: 40px;
-    }
-
-    .link-container a {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .theme-toggle {
-        font-size: 20px;
-    }
+/* Hover Effects */
+a:hover,
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
