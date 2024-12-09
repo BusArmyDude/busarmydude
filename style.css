@@ -259,6 +259,7 @@ button:hover {
     --testimonial-background-color: #f9f9f9;
     --testimonial-text-color: #333;
     --faq-question-color: #333;
+    --events-border-color: #ccc; /* Border color for events section */
 }
 
 body.dark-mode {
@@ -271,6 +272,34 @@ body.dark-mode {
     --testimonial-background-color: #333;
     --testimonial-text-color: #ffffff;
     --faq-question-color: #ffffff;
+    --events-border-color: #444; /* Dark mode border color */
+}
+
+/* Events Section */
+.upcoming-events {
+    margin-top: 50px;
+    padding: 0 20px;
+    border: 1px solid var(--events-border-color); /* Border added here */
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-background-color);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upcoming-events h2 {
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.event-item {
+    margin: 20px;
+    padding: 25px;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
@@ -286,6 +315,10 @@ body.dark-mode {
 
     .testimonial, .faq-item {
         width: 90%;
+    }
+
+    .upcoming-events {
+        width: 90%; /* Make events section full-width on small screens */
     }
 
     /* Adjust container for smaller screens */
