@@ -6,12 +6,15 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color);
     color: var(--text-color);
+    padding-left: 20px;  /* Increased left padding */
+    padding-right: 20px; /* Increased right padding */
 }
 
 /* Profile Section */
 .profile {
     text-align: center;
     margin: 20px auto;
+    max-width: 1000px; /* Set a max width for the layout */
 }
 
 .profile-pic {
@@ -44,17 +47,18 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
 
 .social-icons a {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 45px; /* Increased icon size */
+    height: 45px; /* Increased icon size */
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #007bff; /* Increased border thickness */
     overflow: hidden;
     transition: all 0.3s ease;
 }
