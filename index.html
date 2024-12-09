@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Profile Section -->
     <div class="profile">
         <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
         <div class="name">
-            <h1>Bus Army Dude<img src="check.png" alt="Verified" class="verified-badge"></h1>
+            <h1>Bus Army Dude <img src="check.png" alt="Verified" class="verified-badge"></h1>
         </div>
-        <!-- Profile Bio Description -->
-        <p class="bio">Tech enthusiast, gamer, and Apple collector. Follow for the latest in tech reviews, gaming tips, and much more!</p>
+        <div class="profile-description">
+            <p>Hi, I’m Bus Army Dude, a tech creator passionate about Apple products and gaming. If you love Apple tech and gaming, this is the place for you!</p>
+        </div>
     </div>
 
     <!-- Social Media Icons Section -->
@@ -32,28 +34,15 @@
         <a href="https://www.instagram.com/riverkritzar/" target="_blank"><img src="Instagram-icon.png" alt="Instagram"></a>
     </div>
 
-    <!-- Links Section -->
-    <div class="links-section">
-        <a href="https://riverstechstore24.wordpress.com/" target="_blank">River's Tech Blog</a>
-        <a href="https://rivers-merch-store.printify.me/products" target="_blank">River's Merch Store Printify</a>
-        <a href="https://riverkritzar-shop.fourthwall.com/" target="_blank">River's Fourthwall Shop</a>
+    <!-- Call-to-Action Button Section -->
+    <div class="cta-section">
+        <a href="https://riverstechstore24.wordpress.com/" class="cta-button">Check out my latest News Article!</a>
     </div>
 
-    <!-- Call-to-Action Button -->
-    <div class="cta-button">
-        <a href="https://riverstechstore24.wordpress.com" target="_blank" class="cta-link">Check Out My Latest News Article</a>
+    <!-- Email Section -->
+    <div class="email-section">
+        <a href="mailto:busarmydude@gmail.com" class="email-link">Email Me</a>
     </div>
 
- <!-- Dark Mode Toggle Button -->
-    <div class="dark-mode-toggle">
-        <button>Toggle Dark Mode</button>
-    </div>
-
-    <script>
-        const toggleButton = document.querySelector('.dark-mode-toggle button');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
