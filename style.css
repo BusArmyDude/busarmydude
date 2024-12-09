@@ -219,102 +219,29 @@ body {
     padding: 10px;
 }
 
-.event {
-    display: flex;
-    align-items: center;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+.upcoming-events li {
+    list-style: none;
+    margin: 20px 0;
     padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-}
-
-.event-date {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    background-color: var(--card-background-color);
     border-radius: 8px;
-    margin-right: 20px;
-    width: 80px;
+    color: var(--text-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.event-date .month {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
+/* New Flexbox Layout for Evenly Spaced Buttons and Sections */
+.section-button-container {
+    display: flex;
+    justify-content: space-between; /* Space out the sections evenly */
+    margin: 20px 0; /* Add margin around the sections */
+    padding: 0 20px;
 }
 
-.event-date .day {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.event-date .year {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-}
-
-.event-details {
-    flex: 1;
-    color: #000000; /* Set text color to black */
-}
-
-.event-details p {
+.section-button-container .cta-button,
+.section-button-container .email-link,
+.section-button-container .affiliate-link {
+    width: 48%; /* Make the buttons take up almost equal space on both sides */
     margin: 0;
-    font-size: 1.2em;
-    color: #000000; /* Ensure event name is black */
-}
-
-.event-details .event-time {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #000000; /* Ensure event time is black */
-}
-
-/* Dark Mode Colors for Events */
-body.dark-mode .event-details {
-    color: #000000 !important; /* Force black text color in dark mode */
-}
-
-body.dark-mode .event-details p {
-    color: #000000 !important; /* Ensure event name is black in dark mode */
-}
-
-body.dark-mode .event-details .event-time {
-    color: #000000 !important; /* Ensure event time is black in dark mode */
-}
-
-/* Dark Mode Colors */
-:root {
-    --background-color: #f0f0f0;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
-    --card-background-color: #f9f9f9;
-    --heading-color: #333;
-    --testimonial-background-color: #f9f9f9;
-    --testimonial-text-color: #333;
-    --faq-question-color: #333;
-    --event-text-color: #000000; /* Default event text color (black) */
-    --event-name-color: #000000; /* Default event name color (black) */
-    --event-time-color: #000000; /* Default event time color (black) */
-}
-
-body.dark-mode {
-    --background-color: #181818;
-    --text-color: #eaeaea;
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
-    --card-background-color: #282828;
-    --heading-color: #eaeaea;
-    --testimonial-background-color: #333;
-    --testimonial-text-color: #ffffff;
-    --faq-question-color: #ffffff;
-    --event-text-color: #000000; /* Set event text color to black in dark mode */
-    --event-name-color: #000000; /* Set event name color to black in dark mode */
-    --event-time-color: #000000; /* Set event time color to black in dark mode */
 }
 
 /* Dark Mode Toggle */
@@ -348,9 +275,6 @@ button:hover {
     --testimonial-background-color: #f9f9f9;
     --testimonial-text-color: #333;
     --faq-question-color: #333;
-    --event-text-color: #333; /* Default text color for events */
-    --event-name-color: #333; /* Color for event name */
-    --event-time-color: #555; /* Color for event time */
 }
 
 body.dark-mode {
@@ -363,9 +287,6 @@ body.dark-mode {
     --testimonial-background-color: #333;
     --testimonial-text-color: #ffffff;
     --faq-question-color: #ffffff;
-    --event-text-color: #f1f1f1; /* Lighter event text color in dark mode */
-    --event-name-color: #eaeaea; /* Lighter event name color for dark mode */
-    --event-time-color: #bbb; /* Lighter event time color in dark mode */
 }
 
 /* Responsive Design */
@@ -381,5 +302,18 @@ body.dark-mode {
 
     .testimonial, .faq-item, .upcoming-events li {
         width: 90%;
+    }
+
+    /* Adjust container for smaller screens */
+    .section-button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+    }
+
+    .section-button-container .cta-button,
+    .section-button-container .email-link,
+    .section-button-container .affiliate-link {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 20px; /* Space between buttons */
     }
 }
