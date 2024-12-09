@@ -213,22 +213,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Styling for Upcoming Events Section */
-.upcoming-events {
-    margin: 20px;
-    padding: 10px;
-}
-
-.upcoming-events li {
-    list-style: none;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: var(--card-background-color);
-    border-radius: 8px;
-    color: var(--text-color);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* New Flexbox Layout for Evenly Spaced Buttons and Sections */
 .section-button-container {
     display: flex;
@@ -300,7 +284,7 @@ body.dark-mode {
         width: 90%;
     }
 
-    .testimonial, .faq-item, .upcoming-events li {
+    .testimonial, .faq-item {
         width: 90%;
     }
 
