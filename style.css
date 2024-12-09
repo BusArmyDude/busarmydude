@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f9;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -15,7 +14,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
 }
 
 /* Profile Section */
@@ -133,6 +146,23 @@ body {
     color: #0056b3;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #0077ff;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .profile-pic {
@@ -157,5 +187,9 @@ body {
     .link-container a {
         padding: 10px;
         font-size: 14px;
+    }
+
+    .theme-toggle {
+        font-size: 20px;
     }
 }
