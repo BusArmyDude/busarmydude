@@ -283,8 +283,40 @@ body.dark-mode .event-details p {
 }
 
 body.dark-mode .event-details .event-time {
-    color: #bbb; /* Lighter gray for event time */
+    color: #f1f1f1; /* Lighter gray for event time */
 }
+
+/* Dark Mode Colors */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+    --card-background-color: #f9f9f9;
+    --heading-color: #333;
+    --testimonial-background-color: #f9f9f9;
+    --testimonial-text-color: #333;
+    --faq-question-color: #333;
+    --event-text-color: #333; /* Default text color for events */
+    --event-name-color: #333; /* Color for event name */
+    --event-time-color: #555; /* Color for event time */
+}
+
+body.dark-mode {
+    --background-color: #181818;
+    --text-color: #eaeaea;
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+    --card-background-color: #282828;
+    --heading-color: #eaeaea;
+    --testimonial-background-color: #333;
+    --testimonial-text-color: #ffffff;
+    --faq-question-color: #ffffff;
+    --event-text-color: #f1f1f1; /* Lighter event text color in dark mode */
+    --event-name-color: #eaeaea; /* Lighter event name color for dark mode */
+    --event-time-color: #f1f1f1; /* Lighter event time color in dark mode */
+}
+
 
 /* Dark Mode Toggle */
 .dark-mode-toggle {
