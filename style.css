@@ -75,21 +75,25 @@ body {
 }
 
 .social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px; /* Adjusted to make sure they fit properly */
+    height: 48px; /* Adjusted to make sure they fit properly */
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #f4f4f9; /* Ensures there's a background to prevent icons from looking off */
 }
 
 .social-icons a:hover {
     transform: scale(1.1);
+    background-color: #eef1fd;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 28px; /* Adjusted for proper icon size */
+    height: 28px; /* Adjusted for proper icon size */
     object-fit: cover;
 }
 
@@ -146,8 +150,8 @@ body {
     }
 
     .social-icons a {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
     }
 
     .link-container a {
