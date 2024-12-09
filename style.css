@@ -6,11 +6,11 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color);
     color: var(--text-color);
+    text-align: center;
 }
 
 /* Profile Section */
 .profile {
-    text-align: center;
     margin: 20px auto;
 }
 
@@ -37,12 +37,20 @@ body {
     margin-left: 5px;
 }
 
+/* Profile Description Section */
+.profile-description p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
 /* Social Media Icons Section */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -67,44 +75,37 @@ body {
     object-fit: contain;
 }
 
-/* Links Section */
-.links-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+/* Call-to-Action Button Section */
+.cta-section {
     margin-top: 30px;
 }
 
-.links-section a {
+.cta-button {
     background-color: var(--primary-color);
     color: white;
-    padding: 12px 20px;
-    font-size: 1.1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
     text-decoration: none;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.links-section a:hover {
+.cta-button:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
 }
 
-/* Call-to-Action Button */
-.cta-button {
+/* Email Section */
+.email-section {
     text-align: center;
     margin-top: 40px;
 }
 
-.cta-link {
+.email-link {
     display: inline-block;
     padding: 15px 25px;
-    background-color: var(--cta-color);
+    background-color: #ff5733; /* Change this color as needed */
     color: white;
     font-size: 1.2em;
     text-decoration: none;
@@ -114,8 +115,8 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.cta-link:hover {
-    background-color: var(--cta-hover-color);
+.email-link:hover {
+    background-color: #c04e29; /* Hover color */
     transform: scale(1.05);
 }
 
@@ -146,8 +147,6 @@ button:hover {
     --text-color: #333;
     --primary-color: #007bff;
     --hover-color: #0056b3;
-    --cta-color: #ff5733;
-    --cta-hover-color: #c04e29;
 }
 
 body.dark-mode {
@@ -155,8 +154,6 @@ body.dark-mode {
     --text-color: #eaeaea;
     --primary-color: #007bff;
     --hover-color: #0056b3;
-    --cta-color: #ff7b5b;
-    --cta-hover-color: #d36c50;
 }
 
 /* Responsive Design */
@@ -166,7 +163,11 @@ body.dark-mode {
         justify-content: space-evenly;
     }
 
-    .links-section a {
+    .cta-button {
+        width: 90%;
+    }
+
+    .email-link {
         width: 90%;
     }
 }
