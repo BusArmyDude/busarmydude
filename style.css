@@ -1,68 +1,43 @@
-/* General Styles */
+/* General Layout */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Light/Dark Mode */
-:root {
-    --bg-color: #fff;
-    --text-color: #333;
-    --link-color: #1a73e8;
-    --link-hover-color: #0056b3;
-}
-
-body.dark-mode {
-    --bg-color: #333;
-    --text-color: #fff;
-    --link-color: #4a90e2;
-    --link-hover-color: #8ab4f8;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Profile Section */
 .profile {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 20px auto;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.name {
-    display: inline-flex;
-    align-items: center; /* Vertically center the username and badge */
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .name h1 {
-    margin: 0; /* Remove any extra margin from the username */
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .verified-badge {
-    width: 18px; /* Adjust the size if needed */
-    height: 18px;
-    margin-left: 5px; /* Add some spacing between the name and badge */
-    vertical-align: middle; /* Align with the center of the text */
-    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
-.verified-badge:hover {
-    transform: scale(1.1);
-}
-
-/* Social Media Icons */
+/* Social Media Icons Section */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -71,93 +46,99 @@ body.dark-mode {
 }
 
 .social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 40px;
     height: 40px;
+    background-color: #fff;
     border-radius: 50%;
-    background-color: #eee;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: #1a73e8;
+    background-color: var(--primary-color);
     transform: scale(1.1);
 }
 
-.social-icons i {
-    font-size: 20px;
-    color: #333;
-}
-
-.social-icons a:hover i {
-    color: #fff;
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Links Section */
-.links {
-    border: 2px solid var(--link-color);
-    border-radius: 10px;
-    padding: 20px;
+.links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin-top: 30px;
-    max-width: 500px;
-    margin: 20px auto;
-    background-color: var(--bg-color);
 }
 
-.links h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.links ul li {
-    margin-bottom: 10px;
-}
-
-.links ul li a {
+.links-section a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
     text-decoration: none;
-    color: var(--link-color);
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.links ul li a:hover {
-    color: var(--link-hover-color);
+.links-section a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
 }
 
-/* Light/Dark Mode Toggle Button */
-.mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
     padding: 10px 20px;
-    background-color: var(--link-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.mode-toggle:hover {
-    background-color: var(--link-hover-color);
-}
-
-.mode-toggle:focus {
-    outline: none;
-}
-
-/* Hover Effects */
-a:hover,
 button:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    background-color: var(--hover-color);
+}
+
+/* Dark Mode Colors */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+}
+
+body.dark-mode {
+    --background-color: #181818;
+    --text-color: #eaeaea;
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .links-section a {
+        width: 90%;
+    }
 }
