@@ -258,36 +258,32 @@ body {
 
 .event-details {
     flex: 1;
+    color: #000000; /* Set text color to black */
 }
 
 .event-details p {
     margin: 0;
+    font-size: 1.2em;
+    color: #000000; /* Ensure event name is black */
 }
 
 .event-details .event-time {
     margin-top: 5px;
     font-size: 14px;
-    color: #666;
+    color: #000000; /* Ensure event time is black */
 }
 
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    margin-top: 40px;
+/* Dark Mode Colors for Events */
+body.dark-mode .event-details {
+    color: #000000 !important; /* Force black text color in dark mode */
 }
 
-button {
-    padding: 12px 25px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+body.dark-mode .event-details p {
+    color: #000000 !important; /* Ensure event name is black in dark mode */
 }
 
-button:hover {
-    background-color: var(--hover-color);
+body.dark-mode .event-details .event-time {
+    color: #000000 !important; /* Ensure event time is black in dark mode */
 }
 
 /* Dark Mode Colors */
@@ -301,6 +297,24 @@ button:hover {
     --testimonial-background-color: #f9f9f9;
     --testimonial-text-color: #333;
     --faq-question-color: #333;
+    --event-text-color: #000000; /* Default event text color (black) */
+    --event-name-color: #000000; /* Default event name color (black) */
+    --event-time-color: #000000; /* Default event time color (black) */
+}
+
+body.dark-mode {
+    --background-color: #181818;
+    --text-color: #eaeaea;
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+    --card-background-color: #282828;
+    --heading-color: #eaeaea;
+    --testimonial-background-color: #333;
+    --testimonial-text-color: #ffffff;
+    --faq-question-color: #ffffff;
+    --event-text-color: #000000; /* Set event text color to black in dark mode */
+    --event-name-color: #000000; /* Set event name color to black in dark mode */
+    --event-time-color: #000000; /* Set event time color to black in dark mode */
 }
 
 body.dark-mode {
