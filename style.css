@@ -105,7 +105,7 @@ body {
 .email-link {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #ff5733; /* Change this color as needed */
+    background-color: #ff5733;
     color: white;
     font-size: 1.2em;
     text-decoration: none;
@@ -116,58 +116,98 @@ body {
 }
 
 .email-link:hover {
-    background-color: #c04e29; /* Hover color */
+    background-color: #c04e29;
     transform: scale(1.05);
 }
 
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    text-align: center;
-    margin-top: 40px;
+/* Testimonials Section */
+.testimonials-section {
+    margin-top: 50px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.testimonials-section h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
 }
 
-button:hover {
-    background-color: var(--hover-color);
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Dark Mode Colors */
-:root {
-    --background-color: #f0f0f0;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
+/* FAQ Section */
+.faq-section {
+    margin-top: 50px;
 }
 
-body.dark-mode {
-    --background-color: #181818;
-    --text-color: #eaeaea;
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
+.faq-section h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .social-icons {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .cta-button {
-        width: 90%;
-    }
-
-    .email-link {
-        width: 90%;
-    }
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+
+/* Affiliate Links Section */
+.affiliate-links {
+    margin-top: 50px;
+}
+
+.affiliate-links h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+}
+
+.affiliate-link {
+    display: block;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.affiliate-link:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    margin-top: 50px;
+}
+
+.upcoming-events h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+}
+
+.upcoming-events ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.upcoming-events li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
