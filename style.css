@@ -213,77 +213,30 @@ body {
     transform: scale(1.05);
 }
 
-/* Styling for Upcoming Events Section */
-.upcoming-events {
-    margin: 20px;
-    padding: 10px;
-}
-
-.event {
-    display: flex;
-    align-items: center;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-}
-
-.event-date {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 10px;
+/* Twitch Follower Section */
+.follower-section {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     text-align: center;
-    border-radius: 8px;
-    margin-right: 20px;
-    width: 80px;
 }
 
-.event-date .month {
-    font-size: 18px;
+.follower-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+.follower-section p {
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+#twitch-follower-count {
     font-weight: bold;
-    display: block;
-}
-
-.event-date .day {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.event-date .year {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-}
-
-.event-details {
-    flex: 1;
-    color: #000000; /* Set text color to black */
-}
-
-.event-details p {
-    margin: 0;
-    font-size: 1.2em;
-    color: #000000; /* Ensure event name is black */
-}
-
-.event-details .event-time {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #000000; /* Ensure event time is black */
-}
-
-/* Dark Mode Colors for Events */
-body.dark-mode .event-details {
-    color: #000000 !important; /* Force black text color in dark mode */
-}
-
-body.dark-mode .event-details p {
-    color: #000000 !important; /* Ensure event name is black in dark mode */
-}
-
-body.dark-mode .event-details .event-time {
-    color: #000000 !important; /* Ensure event time is black in dark mode */
+    color: var(--primary-color);
 }
 
 /* Dark Mode Colors */
@@ -297,24 +250,6 @@ body.dark-mode .event-details .event-time {
     --testimonial-background-color: #f9f9f9;
     --testimonial-text-color: #333;
     --faq-question-color: #333;
-    --event-text-color: #000000; /* Default event text color (black) */
-    --event-name-color: #000000; /* Default event name color (black) */
-    --event-time-color: #000000; /* Default event time color (black) */
-}
-
-body.dark-mode {
-    --background-color: #181818;
-    --text-color: #eaeaea;
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
-    --card-background-color: #282828;
-    --heading-color: #eaeaea;
-    --testimonial-background-color: #333;
-    --testimonial-text-color: #ffffff;
-    --faq-question-color: #ffffff;
-    --event-text-color: #000000; /* Set event text color to black in dark mode */
-    --event-name-color: #000000; /* Set event name color to black in dark mode */
-    --event-time-color: #000000; /* Set event time color to black in dark mode */
 }
 
 body.dark-mode {
@@ -340,7 +275,7 @@ body.dark-mode {
         width: 90%;
     }
 
-    .testimonial, .faq-item, .upcoming-events li {
+    .testimonial, .faq-item, .follower-section {
         width: 90%;
     }
 }
