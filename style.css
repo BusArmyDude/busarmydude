@@ -58,9 +58,9 @@ body {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border: 3px solid #007bff; /* Increased border thickness */
     overflow: hidden;
     transition: all 0.3s ease;
+    /* Removed border from social icons */
 }
 
 .social-icons a:hover {
