@@ -275,15 +275,15 @@ body {
 
 /* Dark Mode Colors for Events */
 body.dark-mode .event-details {
-    color: #f1f1f1; /* Lighter text for event name */
+    color: var(--event-text-color-dark); /* Light color for event name */
 }
 
 body.dark-mode .event-details p {
-    color: #eaeaea; /* Lighter, more readable color for event name */
+    color: var(--event-name-color-dark); /* Light color for event name */
 }
 
 body.dark-mode .event-details .event-time {
-    color: #f1f1f1; /* Lighter gray for event time */
+    color: var(--event-time-color-dark); /* Light color for event time */
 }
 
 /* Dark Mode Colors */
@@ -300,6 +300,10 @@ body.dark-mode .event-details .event-time {
     --event-text-color: #333; /* Default text color for events */
     --event-name-color: #333; /* Color for event name */
     --event-time-color: #555; /* Color for event time */
+    
+    --event-text-color-dark: #f1f1f1; /* Light color for event text in dark mode */
+    --event-name-color-dark: #eaeaea; /* Light color for event name in dark mode */
+    --event-time-color-dark: #bbb; /* Lighter gray for event time in dark mode */
 }
 
 body.dark-mode {
@@ -312,9 +316,9 @@ body.dark-mode {
     --testimonial-background-color: #333;
     --testimonial-text-color: #ffffff;
     --faq-question-color: #ffffff;
-    --event-text-color: #f1f1f1; /* Lighter event text color in dark mode */
+    --event-text-color: #f1f1f1; /* Light event text color in dark mode */
     --event-name-color: #eaeaea; /* Lighter event name color for dark mode */
-    --event-time-color: #f1f1f1; /* Lighter event time color in dark mode */
+    --event-time-color: #bbb; /* Lighter event time color in dark mode */
 }
 
 
