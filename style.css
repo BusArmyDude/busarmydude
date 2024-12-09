@@ -17,6 +17,7 @@ body {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  transition: transform 0.3s ease;
 }
 
 h1 {
@@ -35,11 +36,18 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: 10px;
 }
 
 .social-links img {
   width: 30px;
   height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .link-section {
@@ -67,10 +75,11 @@ h1 {
   padding: 10px;
   border-radius: 5px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .links a:hover {
   background-color: #0073e6;
   color: white;
+  transform: scale(1.05);
 }
