@@ -1,32 +1,33 @@
-/* Global Styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
 }
 
-/* Light Mode */
-body.light-mode {
-    background-color: #fff;
-    color: #000;
+/* Light/Dark Mode */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --link-color: #1a73e8;
+    --link-hover-color: #0056b3;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+body.dark-mode {
+    --bg-color: #333;
+    --text-color: #fff;
+    --link-color: #4a90e2;
+    --link-hover-color: #8ab4f8;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
-}
-
-/* Container for Profile */
+/* Profile Section */
 .profile {
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .profile-pic {
@@ -34,26 +35,26 @@ h1, h2, h3, h4 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #fff;
+    margin-bottom: 15px;
 }
 
 .name {
     display: inline-flex;
-    align-items: center;
+    align-items: center; /* Vertically center the username and badge */
     font-size: 28px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .name h1 {
-    margin: 0;
+    margin: 0; /* Remove any extra margin from the username */
 }
 
 .verified-badge {
-    width: 18px;
+    width: 18px; /* Adjust the size if needed */
     height: 18px;
-    margin-left: 5px;
-    vertical-align: middle;
+    margin-left: 5px; /* Add some spacing between the name and badge */
+    vertical-align: middle; /* Align with the center of the text */
     transition: transform 0.3s ease;
 }
 
@@ -70,89 +71,93 @@ h1, h2, h3, h4 {
 }
 
 .social-icons a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #333;
     border-radius: 50%;
+    background-color: #eee;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: #00aaff;
+    background-color: #1a73e8;
     transform: scale(1.1);
 }
 
-.social-icons img {
-    width: 20px;
-    height: 20px;
+.social-icons i {
+    font-size: 20px;
+    color: #333;
+}
+
+.social-icons a:hover i {
+    color: #fff;
 }
 
 /* Links Section */
-.links-section {
-    margin-top: 40px;
-    border: 2px solid #fff;
-    border-radius: 8px;
+.links {
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
     padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.links-section a {
-    display: block;
-    padding: 10px;
-    background-color: #222;
-    color: #e0e0e0;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.links-section a:hover {
-    background-color: #00aaff;
-    color: #fff;
-}
-
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: var(--bg-color);
 }
 
-.dark-mode-toggle button {
-    background-color: #333;
-    color: #fff;
+.links h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Light/Dark Mode Toggle Button */
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     padding: 10px 20px;
+    background-color: var(--link-color);
+    color: #fff;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-.dark-mode-toggle button:hover {
-    background-color: #00aaff;
+.mode-toggle:hover {
+    background-color: var(--link-hover-color);
 }
 
-/* For responsive design */
-@media screen and (max-width: 600px) {
-    .profile {
-        margin-top: 20px;
-    }
+.mode-toggle:focus {
+    outline: none;
+}
 
-    .social-icons {
-        gap: 10px;
-    }
-
-    .links-section {
-        width: 90%;
-        padding: 15px;
-    }
+/* Hover Effects */
+a:hover,
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
