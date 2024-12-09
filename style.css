@@ -1,182 +1,196 @@
 /* Global Styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f7f8fc;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #333;
-  font-weight: 600;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
 /* Profile Section */
 .profile {
-  background-color: #fff;
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0077ff;
+    margin-bottom: 15px;
+}
+
+.name h1 {
+    display: inline-block;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .verified-badge {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
-  vertical-align: middle;
-  transition: transform 0.2s ease;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 .verified-badge:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Social Links Section */
 .social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 40px;
-  width: 100%;
-  max-width: 400px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.social-links a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #0077ff;
-  color: #fff;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
+.social-links h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.social-links a:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.social-links a img {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #0077ff;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Content Links Section */
-.content-links {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+.social-icons a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
-.content-links a {
-  display: block;
-  padding: 12px;
-  font-size: 16px;
-  color: #0077ff;
-  margin-bottom: 12px;
-  background-color: #f4f7ff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
 }
 
-.content-links a:hover {
-  background-color: #eef1fd;
-  color: #0056b3;
+/* Links Section */
+.links {
+    width: 100%;
+    max-width: 500px;
 }
 
-/* Section Styling */
-section {
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.links h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-section h2 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 15px;
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* Email and Contact Section */
-.contact a {
-  display: block;
-  padding: 15px;
-  background-color: #0077ff;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+.link-container a {
+    display: block;
+    padding: 12px;
+    background-color: #fff;
+    color: #0077ff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #0077ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.contact a:hover {
-  background-color: #0056b3;
+.link-container a:hover {
+    background-color: #eef1fd;
+    color: #0056b3;
+}
+
+/* Email Section */
+.email-section {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.email-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.email-link {
+    display: inline-block;
+    padding: 12px;
+    background-color: #fff;
+    color: #0077ff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #0077ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-link:hover {
+    background-color: #eef1fd;
+    color: #0056b3;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-  .profile, .social-links, .content-links {
-    width: 100%;
-    max-width: 100%;
-  }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
 
-  .social-links {
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-  }
+    .verified-badge {
+        width: 18px;
+        height: 18px;
+    }
 
-  .social-links a {
-    width: 35px;
-    height: 35px;
-  }
+    .social-icons {
+        gap: 10px;
+    }
 
-  .profile-pic {
-    width: 100px;
-    height: 100px;
-  }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
 
-  .verified-badge {
-    width: 18px;
-    height: 18px;
-  }
+    .link-container a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .email-link {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
