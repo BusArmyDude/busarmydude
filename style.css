@@ -1,6 +1,6 @@
 /* General Layout */
 body {
-    font-family: 'Inter', sans-serif; /* More modern font */
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,27 +10,29 @@ body {
     line-height: 1.6;
 }
 
-/* Profile Section */
+/* Profile Section with Border */
 .profile {
     margin: 80px auto;
-    text-align: center;
-    padding: 0 20px;
+    padding: 20px;
     max-width: 1200px;
+    border: 2px solid var(--primary-color); /* Add a border around the profile section */
+    border-radius: 12px; /* Rounded corners */
+    background-color: var(--card-background-color); /* Add a background color to the section */
 }
 
 /* Profile Picture */
 .profile-pic {
-    width: 180px;  /* Slightly bigger for modern look */
+    width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 4px solid var(--primary-color); /* Slightly thinner border */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 /* Name Styling */
 .name h1 {
-    font-size: 2.5em; /* Larger name for impact */
+    font-size: 2.5em;
     color: var(--primary-color);
     margin-top: 20px;
     margin-bottom: 10px;
@@ -55,82 +57,15 @@ body {
     margin-right: auto;
 }
 
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 40px;
-    padding: 0 20px;
+/* Testimonials Section with Border */
+.testimonials-section {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid var(--primary-color); /* Border for testimonials section */
+    border-radius: 12px;
+    background-color: var(--card-background-color);
 }
 
-.social-icons a {
-    display: block;
-    width: 50px;  /* Slightly larger icons */
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.1);  /* Subtle hover scale */
-}
-
-.social-icons img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* Call-to-Action Button */
-.cta-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 18px 28px; /* Slightly larger padding */
-    font-size: 1.3em;
-    text-decoration: none;
-    border-radius: 8px;
-    width: 85%;
-    max-width: 420px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.05);
-}
-
-/* Email Section */
-.email-link {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 18px 28px; 
-    font-size: 1.3em;
-    text-decoration: none;
-    border-radius: 8px;
-    width: 85%;
-    max-width: 420px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.email-link:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.05);
-}
-
-/* Testimonials Section */
 .testimonials-section h2 {
     color: var(--heading-color);
     margin-bottom: 20px;
@@ -150,7 +85,15 @@ body {
     color: var(--testimonial-text-color);
 }
 
-/* FAQ Section */
+/* FAQ Section with Border */
+.faq-section {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid var(--primary-color); /* Border for FAQ section */
+    border-radius: 12px;
+    background-color: var(--card-background-color);
+}
+
 .faq-item {
     margin: 20px;
     padding: 30px;
@@ -169,7 +112,15 @@ body {
     margin-bottom: 10px;
 }
 
-/* Affiliate Links Section */
+/* Affiliate Links Section with Border */
+.affiliate-links {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid var(--primary-color); /* Border for affiliate section */
+    border-radius: 12px;
+    background-color: var(--card-background-color);
+}
+
 .affiliate-link {
     display: inline-block;
     background-color: var(--primary-color);
