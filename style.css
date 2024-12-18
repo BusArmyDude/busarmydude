@@ -143,12 +143,93 @@ body {
     transform: scale(1.05);
 }
 
+/* Testimonials Section */
+.testimonials-section {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.testimonials-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 25px;
+    background-color: var(--testimonial-background-color);
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    color: var(--testimonial-text-color);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin: 20px;
+    padding: 25px;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+.faq-item h3 {
+    color: var(--faq-question-color);
+    margin-bottom: 10px;
+}
+
+/* Affiliate Links Section */
+.affiliate-links {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.affiliate-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.affiliate-link:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
 /* Dark Mode Colors */
 :root {
     --background-color: #f0f0f0;
     --text-color: #333;
     --primary-color: #007bff;
     --hover-color: #0056b3;
+    --card-background-color: #f9f9f9;
+    --heading-color: #333;
+    --testimonial-background-color: #f9f9f9;
+    --testimonial-text-color: #333;
+    --faq-question-color: #333;
 }
 
 body.dark-mode {
@@ -156,6 +237,11 @@ body.dark-mode {
     --text-color: #eaeaea;
     --primary-color: #007bff;
     --hover-color: #0056b3;
+    --card-background-color: #282828;
+    --heading-color: #eaeaea;
+    --testimonial-background-color: #333;
+    --testimonial-text-color: #ffffff;
+    --faq-question-color: #ffffff;
 }
 
 /* Responsive Design */
@@ -165,7 +251,11 @@ body.dark-mode {
         justify-content: space-evenly;
     }
 
-    .cta-button, .email-link {
+    .cta-button, .email-link, .affiliate-link {
         width: 90%;
     }
-}
+
+    .testimonial, .faq-item, .follower-section {
+        width: 90%;
+    }
+} 
