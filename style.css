@@ -53,6 +53,12 @@ body {
     margin-right: auto;
 }
 
+/* Discord Widget Section */
+.discord-widget {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* Social Media Icons Section */
 .social-icons {
     display: flex;
@@ -137,186 +143,12 @@ body {
     transform: scale(1.05);
 }
 
-/* Testimonials Section */
-.testimonials-section {
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.testimonials-section h2 {
-    color: var(--heading-color);
-    margin-bottom: 30px;
-}
-
-.testimonial {
-    margin: 20px;
-    padding: 25px;
-    background-color: var(--testimonial-background-color);
-    border-radius: 10px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    color: var(--testimonial-text-color);
-}
-
-/* FAQ Section */
-.faq-section {
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.faq-section h2 {
-    color: var(--heading-color);
-    margin-bottom: 30px;
-}
-
-.faq-item {
-    margin: 20px;
-    padding: 25px;
-    background-color: var(--card-background-color);
-    border-radius: 10px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
-}
-
-.faq-item h3 {
-    color: var(--faq-question-color);
-    margin-bottom: 10px;
-}
-
-/* Affiliate Links Section */
-.affiliate-links {
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.affiliate-link {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 6px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.affiliate-link:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.05);
-}
-
-.event-container {
-  font-family: "Roboto", sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.event-container h3.year {
-  font-size: 40px;
-  text-align: center;
-  border-bottom: 1px solid #b1b1b1;
-}
-
-.event-container .event {
-  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
-  display: flex;
-  border-radius: 8px;
-  margin: 32px 0;
-}
-
-.event .event-left {
-  background: #222;
-  min-width: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #eee;
-  padding: 8px 48px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 8px 0 0 8px;
-}
-
-.event .event-left .date {
-  font-size: 56px;
-}
-
-.event .event-left .month {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.event .event-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 24px;
-}
-
-.event .event-right h3.event-title {
-  font-size: 24px;
-  margin: 24px 0 10px 0;
-  color: #218bbb;
-  text-transform: uppercase;
-}
-
-.event .event-right .event-timing {
-  background: #429667;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  padding: 8px;
-  border-radius: 16px;
-  margin: 24px 0;
-  font-size: 14px;
-}
-
-.event .event-right .event-timing img {
-  height: 20px;
-  padding-right: 8px;
-}
-
-@media (max-width: 550px) {
-  .event {
-    flex-direction: column;
-  }
-
-  .event .event-left {
-    padding: 0;
-    border-radius: 8px 8px 0 0;
-  }
-
-  .event .event-left .event-date .date,
-  .event .event-left .event-date .month {
-    display: inline-block;
-    font-size: 24px;
-  }
-
-  .event .event-left .event-date {
-    padding: 10px 0;
-  }
-}
-
 /* Dark Mode Colors */
 :root {
     --background-color: #f0f0f0;
     --text-color: #333;
     --primary-color: #007bff;
     --hover-color: #0056b3;
-    --card-background-color: #f9f9f9;
-    --heading-color: #333;
-    --testimonial-background-color: #f9f9f9;
-    --testimonial-text-color: #333;
-    --faq-question-color: #333;
 }
 
 body.dark-mode {
@@ -324,11 +156,6 @@ body.dark-mode {
     --text-color: #eaeaea;
     --primary-color: #007bff;
     --hover-color: #0056b3;
-    --card-background-color: #282828;
-    --heading-color: #eaeaea;
-    --testimonial-background-color: #333;
-    --testimonial-text-color: #ffffff;
-    --faq-question-color: #ffffff;
 }
 
 /* Responsive Design */
@@ -338,11 +165,7 @@ body.dark-mode {
         justify-content: space-evenly;
     }
 
-    .cta-button, .email-link, .affiliate-link {
-        width: 90%;
-    }
-
-    .testimonial, .faq-item, .follower-section {
+    .cta-button, .email-link {
         width: 90%;
     }
 }
