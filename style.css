@@ -1,11 +1,45 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Primary Color for Borders and Buttons */
+:root {
+    --primary-color: #007BFF; /* Adjust to your desired primary color */
+    --card-background-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Profile Section */
 .profile {
-    margin: 80px auto;
+    margin: 20px auto;
     padding: 20px;
     max-width: 1200px;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.profile .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Profile Name and Badge */
@@ -15,27 +49,71 @@
     gap: 10px;
 }
 
+.verified-badge {
+    width: 20px;
+    height: 20px;
+}
+
 /* Social Icons Section */
 .social-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
 }
 
 /* Discord Widget */
 .discord-widget {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 20px;
-    border: 2px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 /* Call-to-Action Section */
 .cta-section {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
 /* Testimonials Section */
@@ -45,6 +123,7 @@
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 /* FAQ Section */
@@ -54,6 +133,7 @@
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 /* Affiliate Links Section */
@@ -63,6 +143,7 @@
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 /* Upcoming Events Section */
@@ -75,6 +156,7 @@
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     background-color: var(--card-background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .event {
@@ -126,4 +208,83 @@
 
 .event-timing img {
     margin-right: 5px;
+}
+
+/* Media Queries for Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .social-icons a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .discord-widget {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .event-container {
+        padding: 15px;
+    }
+
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .event-left {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .event-right {
+        width: 100%;
+    }
+
+    .event-date {
+        font-size: 30px;
+    }
+
+    .event-title {
+        font-size: 16px;
+    }
+
+    .event-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
 }
