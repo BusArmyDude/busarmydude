@@ -1,79 +1,74 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Container */
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-}
-
 /* Profile Section */
 .profile {
     text-align: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.profile-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
-.profile-pic {
+.profile img.profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    margin-bottom: 10px;
 }
 
-.name-container {
+.profile .name {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    align-items: center;
+    gap: 10px;
 }
 
-.verified-badge {
-    width: 24px;
-    margin-left: 10px;
+.profile h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile .verified-badge {
+    width: 20px;
+    height: 20px;
 }
 
 .profile-description {
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
 }
 
-/* Social Media Section */
+/* Social Icons Section */
 .social-icons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
-    gap: 10px;  /* Reduced the gap between icons */
 }
 
 .social-icons a {
     display: block;
-    width: 24px;  /* Further reduced the size of each icon */
-    height: 24px;  /* Further reduced the size of each icon */
+    width: 30px;
+    height: 30px;
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
@@ -87,108 +82,273 @@ h1, h2, h3, h4 {
     height: 100%;
 }
 
+/* Discord Widget */
+.discord-widget {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.discord-widget iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    border: none;
+}
+
 /* Call-to-Action Section */
 .cta-section {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .cta-button {
-    background-color: #00bcd4;
-    color: #fff;
-    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 .cta-button:hover {
-    background-color: #009fa3;
+    background-color: #45a049;
+}
+
+/* Email Section */
+.email-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.email-link:hover {
+    text-decoration: underline;
 }
 
 /* Testimonials Section */
 .testimonials-section {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .testimonial {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 30px;
+}
+
+.faq-item {
     margin-bottom: 20px;
 }
 
-.testimonials-section h2 {
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Affiliate Links Section */
+.affiliate-links {
+    margin-top: 30px;
     text-align: center;
 }
 
-/* Events Section */
-.events {
+.affiliate-link {
+    font-size: 1.1rem;
+    color: #FF6347;
+    text-decoration: none;
+}
+
+.affiliate-link:hover {
+    text-decoration: underline;
+}
+
+/* Upcoming Events Section */
+.event-container {
     margin-top: 40px;
 }
 
-.events-title {
-    font-size: 24px;
+.year {
+    font-size: 1.5rem;
+    color: #333;
     text-align: center;
-    margin-bottom: 30px;
-}
-
-.event-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.event {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    flex-basis: 45%;
     margin-bottom: 20px;
 }
 
-.event-date {
-    font-size: 18px;
+.event {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.event-left .event-date {
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #333;
+}
+
+.event-left .date {
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+.event-left .month {
+    font-size: 1rem;
+    color: #666;
+}
+
+.event-right {
+    flex-grow: 1;
+    padding-left: 20px;
 }
 
 .event-title {
-    font-size: 18px;
-    color: #00bcd4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.event-time {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #aaa;
+.event-description {
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Responsive Styles */
+.event-timing {
+    font-size: 1rem;
+    color: #007BFF;
+}
+
+.event-timing img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Media Queries for Mobile */
 @media only screen and (max-width: 768px) {
-    .profile {
-        padding: 20px;
+    .profile img.profile-pic {
+        width: 120px;
+        height: 120px;
     }
 
-    .social-links {
-        flex-wrap: wrap;
-        justify-content: center;
+    .profile h1 {
+        font-size: 1.6rem;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 24px;
+        height: 24px;
     }
 
     .cta-button {
-        padding: 12px 25px;
-        font-size: 16px;
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .email-link {
+        font-size: 0.9rem;
+    }
+
+    .faq-item h3,
+    .faq-item p {
+        font-size: 1rem;
+    }
+
+    .affiliate-link {
+        font-size: 1rem;
     }
 
     .event-container {
-        flex-direction: column;
+        margin-top: 30px;
     }
 
-    .event {
-        flex-basis: 100%;
+    .event-left .date {
+        font-size: 1.5rem;
+    }
+
+    .event-right {
+        padding-left: 10px;
+    }
+
+    .event-title {
+        font-size: 1.2rem;
+    }
+
+    .event-description {
+        font-size: 0.9rem;
+    }
+
+    .event-timing {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries for Small Mobile */
+@media only screen and (max-width: 480px) {
+    .profile img.profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h1 {
+        font-size: 1.4rem;
+    }
+
+    .social-icons a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .email-link {
+        font-size: 0.8rem;
+    }
+
+    .faq-item h3,
+    .faq-item p {
+        font-size: 0.9rem;
+    }
+
+    .affiliate-link {
+        font-size: 0.9rem;
+    }
+
+    .event-left .date {
+        font-size: 1.3rem;
+    }
+
+    .event-title {
+        font-size: 1rem;
+    }
+
+    .event-description {
+        font-size: 0.8rem;
+    }
+
+    .event-timing {
+        font-size: 0.8rem;
     }
 }
