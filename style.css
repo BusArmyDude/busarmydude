@@ -1,28 +1,18 @@
-/* General Reset & Body */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles for all devices */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1b1b1b;
-    color: #fff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
 }
 
-/* Container with subtle shadow and rounded corners */
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #2a2a2a;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
 }
 
 /* Profile Section */
@@ -33,7 +23,7 @@ body {
     justify-content: center;
     margin-top: 40px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
@@ -45,13 +35,11 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-top: 15px;
-    color: #fff;
 }
 
 .verified-badge {
     width: 24px;
     margin-left: 10px;
-    filter: drop-shadow(0 0 4px rgba(0, 150, 255, 0.8));
 }
 
 .profile-pic {
@@ -69,130 +57,76 @@ body {
     padding: 0 20px;
 }
 
-/* Social Icons with Neumorphism */
+/* Social Media Icons */
 .social-icons {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin: 10px;
 }
 
 .social-icons img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 10px;
-    background: #2a2a2a;
-    box-shadow: 8px 8px 16px #121212, -8px -8px 16px #2a2a2a;
-    transition: transform 0.2s, box-shadow 0.2s;
+    width: 40px;
+    height: 40px;
 }
 
-.social-icons img:hover {
-    transform: scale(1.1);
-    box-shadow: 8px 8px 24px #121212, -8px -8px 24px #2a2a2a;
-}
-
-/* Buttons with Modern Rounded Style */
-.cta-button, .email-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: linear-gradient(145deg, #007bff, #0056d4);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
-.cta-button:hover, .email-link:hover {
-    background: linear-gradient(145deg, #0056d4, #007bff);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Section Titles */
-.testimonials-section, .faq-section, .affiliate-links, .event-container {
+/* Call-to-Action Section */
+.cta-section {
     margin-top: 40px;
-    color: #ddd;
-}
-
-h2 {
-    font-size: 26px;
-    color: #fff;
-    margin-bottom: 20px;
     text-align: center;
 }
 
-/* Modern FAQ Section */
-.faq-section p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #ccc;
-}
-
-.faq-section p a {
-    color: #00baff;
+.cta-button {
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
-    transition: color 0.3s;
+    border-radius: 5px;
 }
 
-.faq-section p a:hover {
-    color: #fff;
-}
+/* Media Queries for Responsiveness */
 
-/* Event Section with modern card design */
-.event-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background-color: #252525;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.event-left {
-    float: left;
-    width: 60px;
-}
-
-.event-right {
-    margin-left: 80px;
-}
-
-.event-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.event-description {
-    font-size: 16px;
-    color: #bbb;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    .profile {
         padding: 10px;
     }
 
-    .profile-pic {
-        width: 120px;
-        height: 120px;
+    .name h1 {
+        font-size: 24px;
     }
 
-    .name {
-        font-size: 22px;
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .social-icons img {
-        width: 40px;
-        height: 40px;
+    .profile-description {
+        font-size: 14px;
     }
 
-    .cta-button, .email-link {
+    .cta-button {
+        font-size: 14px;
         padding: 8px 16px;
+    }
+}
+
+/* PC devices */
+@media only screen and (min-width: 600px) {
+    .container {
+        padding: 40px;
+    }
+
+    .profile {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .social-icons {
+        flex-direction: row;
     }
 }
