@@ -64,8 +64,8 @@ h1, h2, h3 {
 
 .social-icons a {
     margin: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px; /* Reduced size for icons */
+    height: 30px; /* Reduced size for icons */
 }
 
 .social-icons img {
@@ -74,15 +74,21 @@ h1, h2, h3 {
     object-fit: contain;
 }
 
-/* Discord Widget */
-.discord-widget iframe {
-    width: 100%;
-    max-width: 350px;
-    height: 500px;
-    margin: 0 auto;
-    display: block;
-    border: none;
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .social-icons a {
+        width: 28px; /* Slightly smaller on tablets */
+        height: 28px;
+    }
 }
+
+@media (max-width: 480px) {
+    .social-icons a {
+        width: 25px; /* Smaller size on mobile */
+        height: 25px;
+    }
+}
+
 
 /* Call-to-Action Button */
 .cta-button {
