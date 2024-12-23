@@ -6,28 +6,43 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Adjust the width as necessary */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
 }
 
 .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    margin-top: 40px;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 150px;
+    height: 150px; /* Ensure consistent size */
+    object-fit: cover;
 }
 
-.verified-badge {
-    width: 20px;
-    margin-left: 10px;
+.name-verified-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .name {
-    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px; /* Space between name and badge */
+}
+
+.verified-badge {
+    width: 24px; /* Adjust size for visibility */
 }
 
 .social-icons {
