@@ -67,13 +67,13 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 20px;
+    gap: 15px;  /* Reduced the gap between icons */
 }
 
 .social-links a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 30px;  /* Reduced the size of each icon */
+    height: 30px;  /* Reduced the size of each icon */
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
